@@ -1,0 +1,15 @@
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+aes_tb.vhd:399:11:@3411065ns:(report note): AES routine to display return: 12029 cycles at 100 MHz
+aes_tb.vhd:499:5:@3799330ns:(report note): PASS: exact delivery ROM, standard AES-128 encryption vector and displayed ciphertext
+aes_tb.vhd:399:11:@4309655ns:(report note): AES routine to display return: 13134 cycles at 100 MHz
+aes_tb.vhd:399:11:@5196345ns:(report note): AES routine to display return: 12029 cycles at 100 MHz
+aes_tb.vhd:399:11:@9085645ns:(report note): AES routine to display return: 13134 cycles at 100 MHz
+aes_tb.vhd:505:5:@9473500ns:(report note): PASS: direct decryption and E/D output chaining
+aes_tb.vhd:399:11:@13477295ns:(report note): AES routine to display return: 12029 cycles at 100 MHz
+aes_tb.vhd:399:11:@14375105ns:(report note): AES routine to display return: 13134 cycles at 100 MHz
+aes_tb.vhd:515:5:@17326330ns:(report note): PASS: manual key/data entry, backspace, incomplete/extra digit handling, second standard vector, decryption, restart and balanced software calls
+aes_tb.vhd:516:5:@17326330ns:(report note): OVERALL PASS: AES-128 keyboard/VGA program on saved full CPU pipeline
+simulation stopped @17326330ns

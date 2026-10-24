@@ -1,0 +1,34 @@
+VGA 5x5 driver verification
+
+Tool: GHDL 4.1.0 (mcode), VHDL-2008
+Source: vga_driver.vhd
+Testbench: tb_vga_driver.vhd
+RAM models: synchronous, one-cycle latency, same 100 MHz clock
+
+Compilation: PASS
+Elaboration: PASS
+Functional simulation: PASS
+Counted output/reset checks: 10,089,816
+Complete frames compared: 2 (800 x 525 timing positions per frame)
+Final simulated time: 33,632,836 ns
+
+The simulation checked RGB and both sync signals on every system-clock
+sample of every four-clock pixel. Additional RAM model assertions checked
+address ranges/order, glyph word selection, and one-edge enable pulses.
+It also checked reset interruption/restart, active-video reset, frame and
+scanline boundaries, all 25 glyph bit positions, ignored spare bits,
+all-background/all-foreground glyphs, all glyph indices, color selection,
+and new glyph/screen contents loaded during vertical blanking.
+
+GHDL synthesis frontend: PASS, no diagnostics
+Generated synthesizable netlist size: 47,522 bytes
+This is a frontend synthesis check, not FPGA place-and-route or a timing report.
+
+Tcl runner: source/procedure loading checked using Tcl 9.0.4.
+xvhdl/xelab/xsim execution: not run here (Vivado is unavailable).
+Actual Vivado block-memory IP models, CPU/block design integration,
+FPGA implementation timing, and a physical VGA monitor: not tested here.
+
+Simulation result:
+OVERALL PASS: 10089816 checks; full-frame RGB, 4-clock pixels, sync, blanking,
+RAM addressing, glyph updates and reset recovery matched

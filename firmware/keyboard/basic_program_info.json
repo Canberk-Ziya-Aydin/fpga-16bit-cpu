@@ -1,0 +1,28 @@
+{
+  "program_words": 173,
+  "program_bytes": 346,
+  "rom_depth": 32768,
+  "cursor": false,
+  "margin_cells": 2,
+  "margin_pixels": 10,
+  "first_text_address": 130,
+  "heading_address": 2,
+  "labels": {
+    "start": 0,
+    "clear_screen": 10,
+    "resume": 66,
+    "poll": 67,
+    "letter": 101,
+    "digit": 107,
+    "space": 113,
+    "print": 115,
+    "enter": 121,
+    "bounds": 128,
+    "check_margin": 137,
+    "skip_margin": 146,
+    "backspace": 149,
+    "move_left": 158,
+    "left_skip_margin": 168,
+    "erase_left": 171
+  }
+}

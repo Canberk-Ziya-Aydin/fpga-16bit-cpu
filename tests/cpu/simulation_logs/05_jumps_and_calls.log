@@ -1,0 +1,2 @@
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/cpu/cpu_program_tb.vhd:339:5:@759186ns:(report note): PASS: 12302 RAM/screen words checked; 1 LOAD-use stalls; 12352 taken branches; ROM 7FFF=true
+simulation stopped @759186ns

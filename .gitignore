@@ -1,0 +1,25 @@
+# Generated Vivado project and simulation output
+/build/
+/.Xil/
+**/.Xil/
+*.jou
+vivado*.log
+*.str
+*.dcp
+*.wdb
+*.vcd
+*.bit
+*.bin
+*.ltx
+*.xpr
+*.cache/
+*.gen/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db

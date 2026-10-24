@@ -1,0 +1,4 @@
+PASS: boot, all 2048 lookup entries, call stack and keyboard poll
+PASS: 68 keys, 68 encryptions, 136 decryptions against independent AES oracle
+Core verification executed 2446708 actual instructions
+PASS: manual hexadecimal entry, incomplete/extra entry handling, backspace, example, E/D chaining and restart

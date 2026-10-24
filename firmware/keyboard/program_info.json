@@ -1,0 +1,33 @@
+{
+  "program_words": 239,
+  "program_bytes": 478,
+  "rom_depth": 32768,
+  "cursor": true,
+  "margin_cells": 2,
+  "margin_pixels": 10,
+  "first_text_address": 130,
+  "heading_address": 2,
+  "labels": {
+    "start": 0,
+    "clear_screen": 10,
+    "resume": 66,
+    "poll": 76,
+    "letter": 135,
+    "digit": 141,
+    "space": 147,
+    "print": 149,
+    "enter": 155,
+    "bounds": 162,
+    "check_margin": 171,
+    "skip_margin": 180,
+    "backspace": 183,
+    "left": 192,
+    "move_left": 197,
+    "left_skip_margin": 207,
+    "erase_left": 210,
+    "right": 212,
+    "up": 220,
+    "down": 228,
+    "down_move": 235
+  }
+}

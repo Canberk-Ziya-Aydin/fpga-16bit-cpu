@@ -1,0 +1,4 @@
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/vga/tb_vga_driver.vhd:289:13:@16800326ns:(report note): Completed frame 1: pixels, sync, blanking and RAM reads match
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/vga/tb_vga_driver.vhd:289:13:@33600326ns:(report note): Completed frame 2: pixels, sync, blanking and RAM reads match
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/vga/tb_vga_driver.vhd:302:9:@33632836ns:(report note): OVERALL PASS: 10089816 checks; full-frame RGB, 4-clock pixels, sync, blanking, RAM addressing, glyph updates and reset recovery matched
+simulation finished @33632836ns

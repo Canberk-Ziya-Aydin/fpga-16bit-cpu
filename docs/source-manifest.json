@@ -1,0 +1,123 @@
+[
+  {
+    "file": "rtl/cpu/IF_ID_reg.vhd",
+    "source": "IF_ID_reg(10).vhd",
+    "source_sha256": "c4cef98b11461f971e937b97f69464b7ba908bdfd790940a404ef22d3688d203",
+    "sha256": "c4cef98b11461f971e937b97f69464b7ba908bdfd790940a404ef22d3688d203",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/MEM_block.vhd",
+    "source": "MEM_block(20261024-223200).vhd",
+    "source_sha256": "b7ac26044d7a154a88afc4afc75bacb096653938a6048c428432a5b89744c272",
+    "sha256": "b7ac26044d7a154a88afc4afc75bacb096653938a6048c428432a5b89744c272",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/MEM_WB_reg.vhd",
+    "source": "MEM_WB_reg(10).vhd",
+    "source_sha256": "49d5fd3976b4c90074b66ef4baf6ac8f8e212a7e1c8600e4e6912053b1ea2582",
+    "sha256": "49d5fd3976b4c90074b66ef4baf6ac8f8e212a7e1c8600e4e6912053b1ea2582",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/REG_file.vhd",
+    "source": "REG_file(20261024-223204).vhd",
+    "source_sha256": "39471718826e2d767d0ce15c41f1dc348b53af4c90db5251c3c4626e296c6e84",
+    "sha256": "39471718826e2d767d0ce15c41f1dc348b53af4c90db5251c3c4626e296c6e84",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/WB_block.vhd",
+    "source": "WB_block(10).vhd",
+    "source_sha256": "f0aeb60c90edf81c9db945d79b49a6f54b45d1fa17506cef62a319f714fa677e",
+    "sha256": "2034fa85115583254f1a2da4627ff6a76fd4d10c33a751d4257eb01e80ffa7f3",
+    "logic_changed": false,
+    "line_endings_normalized": true
+  },
+  {
+    "file": "rtl/cpu/data_forwarding_unit.vhd",
+    "source": "data_forwarding_unit(20261024-223206).vhd",
+    "source_sha256": "94583f3e0dc817934c810ccabeaa368c6a5f2990a3cc63db2d23fa3bc59355d2",
+    "sha256": "94583f3e0dc817934c810ccabeaa368c6a5f2990a3cc63db2d23fa3bc59355d2",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/EX_block.vhd",
+    "source": "EX_block(20261024-223208).vhd",
+    "source_sha256": "5e83b8593c5362389303d08d8728024deb4cfddc4746cd47935ef8db5e0bf1cb",
+    "sha256": "5e83b8593c5362389303d08d8728024deb4cfddc4746cd47935ef8db5e0bf1cb",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/EX_MEM_reg.vhd",
+    "source": "EX_MEM_reg(10).vhd",
+    "source_sha256": "f14088180eaefac4bf91d0fe4c2a31552c1c4ab933f1bafefd6706dee4d08014",
+    "sha256": "f14088180eaefac4bf91d0fe4c2a31552c1c4ab933f1bafefd6706dee4d08014",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/ID_block.vhd",
+    "source": "ID_block(20261024-223154).vhd",
+    "source_sha256": "0393336978da6b8d46296a2016b544158088d34cef8b78ca7a9534e1335b663e",
+    "sha256": "51ab9627cc4e2881171e20f3552a94bca4a23f5592db8bba2596f651f71e6729",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/ID_EX_reg.vhd",
+    "source": "ID_EX_reg(20261024-223154).vhd",
+    "source_sha256": "b17932fe31e23adf6ce9b582c10cdf233e4d57d707d7832ffe8f49c863283785",
+    "sha256": "b17932fe31e23adf6ce9b582c10cdf233e4d57d707d7832ffe8f49c863283785",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/cpu/IF_block.vhd",
+    "source": "IF_block(20261024-223200).vhd",
+    "source_sha256": "5595a343de95c0144984fa37242a632adec48585f64db1447a79b314f7254b80",
+    "sha256": "5595a343de95c0144984fa37242a632adec48585f64db1447a79b314f7254b80",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/io/ps2_deserializer.vhd",
+    "source": "ps2_deserializer(3).vhd",
+    "source_sha256": "0281be59d8098ea8ebc501665200f0a9a3c0955a2b721b566e2c5d2a9fa86a59",
+    "sha256": "0281be59d8098ea8ebc501665200f0a9a3c0955a2b721b566e2c5d2a9fa86a59",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/io/ps2_scancode_filter.vhd",
+    "source": "ps2_scancode_filter(3).vhd",
+    "source_sha256": "694d0e8de9a0a00e8346765da6e5ef7ed0e7de7beedbe1635169c09c4e63cb08",
+    "sha256": "694d0e8de9a0a00e8346765da6e5ef7ed0e7de7beedbe1635169c09c4e63cb08",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/io/fifo_bram_mux.vhd",
+    "source": "fifo_bram_mux(3).vhd",
+    "source_sha256": "1214702b5d8dd074172df2b91d8438827ae5a6df5a41771f34cf5e7eb40d66f2",
+    "sha256": "1214702b5d8dd074172df2b91d8438827ae5a6df5a41771f34cf5e7eb40d66f2",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/io/fifo_buffer.vhd",
+    "source": "fifo_buffer(3).vhd",
+    "source_sha256": "5c663b36e31080159a0069391fe47c38f25c1d3f2a6f49909c9287573d913c69",
+    "sha256": "5c663b36e31080159a0069391fe47c38f25c1d3f2a6f49909c9287573d913c69",
+    "logic_changed": false
+  },
+  {
+    "file": "rtl/video/vga_driver.vhd",
+    "source": "vga_driver(1).vhd",
+    "source_sha256": "e02469d91f774a1ba010a65373718bf14ac7cb54659d0883cb5d318269729477",
+    "sha256": "e02469d91f774a1ba010a65373718bf14ac7cb54659d0883cb5d318269729477",
+    "logic_changed": false
+  },
+  {
+    "file": "constraints/basys3.xdc",
+    "source": "constraints(2).xdc",
+    "source_sha256": "81d2b094d36ab1aa4ac00c90e5e3bf3d1b3fb854ba4d497dda537c80299765c8",
+    "sha256": "1108bdc37d11b273bffdb44db2cdf58154ed71a8902b32deacff22230320bad7",
+    "logic_changed": false,
+    "line_endings_normalized": true
+  }
+]

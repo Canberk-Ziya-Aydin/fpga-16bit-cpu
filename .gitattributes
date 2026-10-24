@@ -1,0 +1,10 @@
+* text=auto
+*.vhd text eol=lf
+*.tcl text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.coe linguist-generated=true
+*_listing.txt linguist-generated=true
+**/manifest.json linguist-generated=true
+firmware/aes/aes_tables.json linguist-generated=true
+vivado/*.bd linguist-generated=true

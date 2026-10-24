@@ -1,0 +1,46 @@
+MARGIN VERIFICATION
+===================
+
+GHDL, VHDL-2008. Tested both delivered COE images with the saved CPU
+pipeline, unchanged reference FIFO, actual uploaded fifo_bram_mux, and
+existing VGA driver. Basic mode used your uploaded unmodified filter.
+Cursor mode used the previously delivered arrow-enabled filter.
+ROM/RAM were one-clock behavioral models with the existing font preloaded.
+
+Passed 391 basic actions and 744 cursor actions. All 12288 screen words
+were compared with a row/column reference model after each action. Checks
+cover startup at 0002/0082, empty left-margin cells, immediate keys, every
+letter/digit, Space, Enter, automatic wrap, Backspace across row boundaries,
+protected heading, cursor navigation/restoration and bottom-screen wrap.
+Each mode also passed 200 VGA pixel checks including the 10-pixel margin.
+
+No Vivado or physical FPGA testing was performed here. This test feeds
+scan bytes to the filter, rather than PS/2 pin waveforms. The receiver and
+raw PS/2 path were verified separately during the earlier delay diagnosis.
+
+SIMULATION LOGS
+---------------
+
+BASIC
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+margin_tb.vhd:458:5:@738156ns:(report note): PASS: startup heading at 0002, typing at 0082, first two columns empty
+margin_tb.vhd:543:5:@1030422ns:(report note): PASS: 200 VGA pixels including 10-pixel black left margin
+margin_tb.vhd:481:5:@1091130ns:(report note): PASS: letters, digits, Space, Enter, Backspace and ignored modifiers
+margin_tb.vhd:491:5:@1255900ns:(report note): PASS: 126-column typing wrap and Backspace across row margin
+margin_tb.vhd:509:5:@1515280ns:(report note): OVERALL PASS: 391 actions; all 12288 screen words checked after every action; cursor mode=false
+simulation stopped @1515280ns
+
+CURSOR
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+margin_tb.vhd:458:5:@738246ns:(report note): PASS: startup heading at 0002, typing at 0082, first two columns empty
+margin_tb.vhd:543:5:@1032632ns:(report note): PASS: 200 VGA pixels including 10-pixel black left margin
+margin_tb.vhd:481:5:@1120270ns:(report note): PASS: letters, digits, Space, Enter, Backspace and ignored modifiers
+margin_tb.vhd:491:5:@1331380ns:(report note): PASS: 126-column typing wrap and Backspace across row margin
+margin_tb.vhd:509:5:@2112410ns:(report note): OVERALL PASS: 744 actions; all 12288 screen words checked after every action; cursor mode=true
+simulation stopped @2112410ns

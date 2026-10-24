@@ -1,0 +1,46 @@
+AES-128 keyboard/VGA firmware verification
+
+Later status update (25 October 2026): the project author reports running this
+demo on the Basys 3. The report below records Codex's earlier simulations and
+does not claim a hardware benchmark. Firmware and tests were written by Codex.
+
+ROM SHA-256: b7ec2f91df97f9f0d0195ef4eef508941e99715aff4cf020bcce212effa3a81d
+ROM: 32768 words, 11789 instruction words.
+ROM rebuild is byte-for-byte reproducible and matches the exact full-pipeline simulation ROM.
+All machine words were checked against the address listing.
+
+Architectural instruction simulation:
+- Executes the actual delivered 16-bit machine instructions.
+- Compared to independent AES implementation from the installed cryptography package.
+- 68 keys: 4 fixed cases and 64 deterministic random cases.
+- 68 encryptions, 68 matching decryptions, 68 independent unrelated ciphertext decryptions.
+- Includes FIPS 197 AES-128 example, all-zero, all-FF and SP 800-38A example inputs.
+- Checked the final expanded key for the FIPS example.
+- Tested boot lookup tables, manual entry, incomplete/extra digits, backspace, E/D chaining and restart.
+
+Full CPU RTL simulation:
+- GHDL, VHDL-2008, 100 MHz clock.
+- Saved complete eleven-module CPU pipeline with the agreed register-jump, 15-bit ROM-address and LOAD-use hazard changes.
+- Actual uploaded ps2_scancode_filter(1).vhd, fifo_buffer(1).vhd, fifo_bram_mux(1).vhd.
+- Existing vga_driver.vhd; one-clock synchronous ROM, screen RAM and glyph RAM models.
+- Exact delivery ROM, without simulation modifications.
+- All 2048 runtime-loaded lookup table entries checked.
+- FIPS example encryption/decryption and SP 800-38A encryption/decryption checked.
+- Entered second key and block through scan-code -> filter -> FIFO -> CPU path.
+- Checked manual entry, backspace, incomplete/extra digits, E/D output chaining and reset/restart controls.
+- Enlarged displayed output characters were independently checked against the existing glyph font.
+- Software stack pointer checked at every keyboard polling boundary.
+- Source-level reset initialization produces harmless numeric_std unknown-value warnings at time zero; all post-reset assertions pass.
+- PS/2 serial line timing was not re-tested in this suite; scan codes enter at the deserializer output.
+
+Simulated AES routine-entry to output-display-return intervals:
+- Encryption: 12029 clocks, about 120.29 microseconds at 100 MHz.
+- Decryption: 13134 clocks, about 131.34 microseconds at 100 MHz.
+- These exclude table initialization, key expansion, input collection and VGA text drawing.
+
+Both preview images are generated from actual simulation screen RAM.
+These are simulation results, not a physical FPGA benchmark or hardware validation.
+
+Sources:
+https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf
+https://csrc.nist.gov/files/pubs/fips/197/final/docs/fips-197.pdf

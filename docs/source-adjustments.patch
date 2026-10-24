@@ -1,0 +1,12 @@
+--- uploaded/ID_block(20261024-223154).vhd
++++ rtl/cpu/ID_block.vhd
+@@ -158,8 +158,7 @@
+ 
+         -- A one-cycle stall is required when the instruction in EX is a LOAD
+         -- and the instruction in ID needs the LOAD destination in its EX
+-        -- stage.  Branch dependencies are intentionally handled separately,
+-        -- because branches consume their operands here in ID.
++        -- stage, including register targets for branches resolved in EX.
+         if id_ex_opcode_in = "1010" then
+             if ((uses_source_1 = '1' and id_ex_rd_in = selected_source_1) or
+                 (uses_source_2 = '1' and id_ex_rd_in = decoded_rs2)) then
