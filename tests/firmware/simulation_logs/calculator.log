@@ -1,0 +1,6 @@
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/firmware/calculator/presentation_tb.vhd:462:5:@24826310ns:(report note): PASS: calculator keyboard, limits, backspace, signed subtraction, 65025 product, quotient/remainder, zero divisor, restart, large glyphs and software calls
+simulation stopped @24826310ns

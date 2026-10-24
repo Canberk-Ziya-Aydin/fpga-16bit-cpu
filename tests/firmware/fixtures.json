@@ -1,0 +1,36 @@
+{
+  "description": "Original firmware simulation fixtures, restored unchanged; SHA-256 values identify the inputs used for the archived logs.",
+  "cases": {
+    "aes": {
+      "testbench": "aes/aes_tb.vhd",
+      "testbench_sha256": "1f9bd0d5be8bf69803b00ce53a549aef5bf64c7d21d85fc0b31002b099ffc511",
+      "inputs_sha256": {
+        "rom_words.txt": "030515c370a370762674b408d4a0b6ec2ca230bbbe5dbc99b9fb91e72d972cae",
+        "font_words.txt": "38f08aadd71e6ba59a7a36ff82e77b7d560470cd169487806f8cdfb41b4c9d39",
+        "tables_expected.txt": "63a0fdff9da286f8056949c7ecf0dc562c911819e21008e51eeb7a7f44fa6226"
+      },
+      "archived_log": "firmware/aes/pipeline_simulation.log",
+      "archived_log_sha256": "1bcd149daccfde8e1f368f8c05cb9ca3413edefc1eec977df48e7f30770fef95"
+    },
+    "calculator": {
+      "testbench": "calculator/presentation_tb.vhd",
+      "testbench_sha256": "a76df753bb16dab76c12aa00ebc2099fc496bec05d2a15414e632d64615af290",
+      "inputs_sha256": {
+        "rom_words.txt": "a3ac8d83bf27f617aa89d131075fb32770c1eea40d7f276027988f09240639d6",
+        "font_words.txt": "38f08aadd71e6ba59a7a36ff82e77b7d560470cd169487806f8cdfb41b4c9d39"
+      },
+      "archived_log": "firmware/presentation/simulation_logs/presentation_calculator.log",
+      "archived_log_sha256": "4f0e2917036a61850e19a963585a6434e4a6cd5870ab3b31415fefa362c4f6b1"
+    },
+    "animation": {
+      "testbench": "animation/presentation_tb.vhd",
+      "testbench_sha256": "02dcd996afdf6626f51d1f6fb34194ca3e1be6ec56e03a2baa5484cdf6a10af5",
+      "inputs_sha256": {
+        "rom_words.txt": "c88bcfcd3fc8fa69b0b68d75f30575712cc3f09bfbc9dfe1a85f84857a8fef3d",
+        "font_words.txt": "38f08aadd71e6ba59a7a36ff82e77b7d560470cd169487806f8cdfb41b4c9d39"
+      },
+      "archived_log": "firmware/presentation/simulation_logs/presentation_animation.log",
+      "archived_log_sha256": "50ba1d26d2aa4528cc9dff653e1483fd2e68767b0e47d62a36ab84fdcbbba668"
+    }
+  }
+}

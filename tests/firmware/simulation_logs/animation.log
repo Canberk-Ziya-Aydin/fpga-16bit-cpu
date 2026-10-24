@@ -1,0 +1,6 @@
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1320:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1624:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+/workspace/scratch/a76fb75d4e52/github_publish_work/fpga-16bit-cpu/tests/firmware/animation/presentation_tb.vhd:462:5:@10406196ns:(report note): PASS: animated sprite, 240 frames, bounds, pause/resume, color, three speeds, restart, large glyphs and software calls
+simulation stopped @10406196ns

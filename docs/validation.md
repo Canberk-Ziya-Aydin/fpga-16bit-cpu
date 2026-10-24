@@ -41,11 +41,25 @@ All sixteen default RTL modules were checked as VHDL-2008. All ten program COEs
 contain 32,768 valid 16-bit words each; the font COE contains 512 valid words.
 Documentation links and the source manifest were checked.
 
+## Firmware RTL simulation reruns
+
 The AES/calculator/animation folders retain their earlier simulation reports and
-logs. Those firmware simulations were not repeated during packaging.
+logs. Their original testbenches and a runner that regenerates the exact inputs
+are now included in [tests/firmware](../tests/firmware/README.md). All three
+testbenches were restored unchanged and rerun with the current repository RTL
+using GHDL 4.1.0 (mcode), VHDL-2008. **AES, calculator and animation all passed.**
+Their reported results and simulated event times matched the archived runs.
+Fresh logs are in [tests/firmware/simulation_logs](../tests/firmware/simulation_logs).
+
+The runner verifies hashes of the original testbenches and generated inputs.
+AES and calculator use the delivered ROMs; animation retains the documented
+two-instruction software-delay shortcut. These reruns cover the firmware HDL
+fixtures; the separate older AES instruction-level report was not rerun here.
 Their old references to hardware runs not performed "here" refer to the
 simulation environment; the author's later calculator/AES hardware runs are
 recorded above.
+
+## Vivado build limits
 
 Vivado is unavailable in the packaging environment. Tcl completeness checking
 does not validate Vivado commands or IP properties. Clean project regeneration,
