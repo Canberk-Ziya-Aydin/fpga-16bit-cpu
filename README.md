@@ -3,6 +3,10 @@
 A personal CPU project implemented in VHDL on the **Digilent Basys 3**, with a
 PS/2 keyboard and VGA text display.
 
+![Calculator running on hardware, showing 123 minus 45 equals 78](docs/images/calculator-hardware.jpg)
+
+*Monitor output from the calculator software running on the Basys 3 CPU.*
+
 ## Features
 
 - Five-stage IF / ID / EX / MEM / WB pipeline.
