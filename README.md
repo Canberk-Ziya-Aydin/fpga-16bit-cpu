@@ -35,6 +35,23 @@ LOAD dependencies, high RAM addresses, branches and Fibonacci. **Fibonacci and
 the animation are simulation-tested; I have not run them on the FPGA.**
 See [validation](docs/validation.md) for the test scope and logs.
 
+## Implementation results
+
+Vivado reports supplied by the author on 25 November 2026 for the existing
+implemented Basys 3 project (100 MHz system clock):
+
+| Resource | Used | Available | Utilization |
+|---|---:|---:|---:|
+| Slice LUTs | 762 | 20,800 | 3.66% |
+| Slice registers | 516 | 41,600 | 1.24% |
+| Block RAM tiles | 42 | 50 | 84.00% |
+
+Setup WNS and hold WHS are both **+0.055 ns**, with zero failing endpoints.
+Vivado reports that all user-specified timing constraints are met. These are
+whole-system results, including memories and peripherals, rather than CPU-only
+figures. The timing margin is small; these reports do not verify a clean rebuild
+from this repository. See [validation](docs/validation.md) for scope and details.
+
 ## Build
 
 The previous project-creation script was removed after a clean rebuild attempt
