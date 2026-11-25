@@ -38,7 +38,6 @@ Simulated AES routine-entry to output-display-return intervals:
 - Decryption: 13134 clocks, about 131.34 microseconds at 100 MHz.
 - These exclude table initialization, key expansion, input collection and VGA text drawing.
 
-Both preview images are generated from actual simulation screen RAM.
 These are simulation results, not a physical FPGA benchmark or hardware validation.
 
 Sources:

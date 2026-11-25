@@ -120,6 +120,5 @@ python verify_aes.py
 
 See `verification.txt` and the simulation logs for the checks performed with
 the saved CPU pipeline, keyboard filter, FIFO, memory mux and VGA driver.
-The preview images are rendered from simulation screen RAM. The reports describe
-automated simulations; my later FPGA run is recorded separately in the
-repository README and validation notes.
+The reports describe automated simulations; my later FPGA run is recorded
+separately in the repository README and validation notes.

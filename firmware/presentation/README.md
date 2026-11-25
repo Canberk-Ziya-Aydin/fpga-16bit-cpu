@@ -61,9 +61,6 @@ from glyph RAM and turns each font bit into one coloured screen cell. Each
 large character is 25x25 physical pixels, with spacing between characters.
 The VGA driver and glyph format stay the same.
 
-The preview PNGs show frames rendered from simulation screen RAM. They are
-not photographs of the FPGA output.
-
 ## Files and memory
 
 Each demo includes a ready-to-load 32,768-word COE, assembly source and a

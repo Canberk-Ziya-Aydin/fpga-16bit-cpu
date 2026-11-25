@@ -11,7 +11,6 @@ Software stack pointer was checked at every keyboard polling boundary.
 Calculator: exact delivery ROM simulated.
 Animation: only the software delay constant was shortened from FFFF to 0008 for simulation; other ROM words unchanged.
 Animation: 240 frames plus pause/resume, colour, speed changes and restart.
-Preview images were rendered from actual simulation screen RAM with the existing font.
 These automated simulations did not include physical FPGA execution; my calculator hardware run is recorded above.
 
 presentation_calculator: calculator keyboard, limits, backspace, signed subtraction, 65025 product, quotient/remainder, zero divisor, restart, large glyphs and software calls
