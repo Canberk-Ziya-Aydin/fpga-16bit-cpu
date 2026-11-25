@@ -7,6 +7,35 @@ These are hardware demonstrations; they are separate from the automated
 simulation results below. Fibonacci and the animation have not been reported as
 run on the FPGA.
 
+## Implemented hardware reports
+
+On 25 November 2026 the author supplied screenshots of Vivado's utilization
+and Design Timing Summary for `impl_1` / `top_design_wrapper` on
+`xc7a35tcpg236-1`, from the existing working project. The documented system
+clock is 100 MHz. The figures cover the full system, not only the CPU core.
+
+| Resource | Used | Available | Utilization |
+|---|---:|---:|---:|
+| Slice LUTs | 762 | 20,800 | 3.66% |
+| Slice registers | 516 | 41,600 | 1.24% |
+| Block RAM tiles | 42 | 50 | 84.00% |
+
+Additional utilization: 758 LUTs as logic, 4 LUTs as memory, 341 slices,
+77 F7 muxes, 9 F8 muxes, 25 bonded IOBs and 1 BUFGCTRL.
+
+| Timing check | Worst slack | Total negative slack | Failing endpoints | Total endpoints |
+|---|---:|---:|---:|---:|
+| Setup | +0.055 ns | 0.000 ns | 0 | 2,208 |
+| Hold | +0.055 ns | 0.000 ns | 0 | 2,208 |
+| Pulse width | +3.750 ns | 0.000 ns | 0 | 613 |
+
+Vivado reports: **All user specified timing constraints are met.** The setup
+and hold margins are small. This conclusion applies to the constraints in that
+implemented project; the screenshots alone do not establish complete timing
+constraint coverage or timing of unconstrained external I/O. No independent
+Vivado rerun was performed while recording these results. They do not establish
+that the repository export recreates the same implementation.
+
 ## CPU regression simulations
 
 ChatGPT/Codex supplied and ran the regression programs and test utilities using
