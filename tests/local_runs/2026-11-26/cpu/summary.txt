@@ -1,0 +1,5 @@
+01_alu_forwarding: PASS: 12307 RAM/screen words checked; 0 LOAD-use stalls; 12371 taken branches; ROM 7FFF=false
+02_fibonacci: PASS: 12309 RAM/screen words checked; 0 LOAD-use stalls; 12397 taken branches; ROM 7FFF=false
+03_math_loops: PASS: 12297 RAM/screen words checked; 0 LOAD-use stalls; 12362 taken branches; ROM 7FFF=false
+04_ram_hazards: PASS: 12571 RAM/screen words checked; 4 LOAD-use stalls; 13135 taken branches; ROM 7FFF=false
+05_jumps_and_calls: PASS: 12302 RAM/screen words checked; 1 LOAD-use stalls; 12352 taken branches; ROM 7FFF=true

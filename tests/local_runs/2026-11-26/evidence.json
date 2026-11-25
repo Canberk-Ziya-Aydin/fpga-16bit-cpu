@@ -1,0 +1,181 @@
+{
+  "run_date_local": "2026-11-26",
+  "timezone": "Europe/Istanbul",
+  "source_commit": "1106c7ffb5a8f7933944b1059570c9eccf2be8aa",
+  "tools_reported_in_terminal": {
+    "ghdl": "6.0.0, mcode, GNAT 15.2.0",
+    "python": "3.14",
+    "os": "Windows"
+  },
+  "compiled_source_sha1_entries": {
+    "cpu/work-obj08.cf": {
+      "tests/cpu/cpu_program_tb.vhd": "c1d7998769d910bd310ed191343d2410cae43e32",
+      "rtl/cpu/data_forwarding_unit.vhd": "c31c1e25ae7c64d94f1f3021ae3fa4976d1b0463",
+      "rtl/cpu/MEM_WB_reg.vhd": "c53479d481ba183b9c23c8c6b04adb94490020c3",
+      "rtl/cpu/EX_MEM_reg.vhd": "c763e29889b835bb7df588cdeb0a5cd513798004",
+      "rtl/cpu/ID_EX_reg.vhd": "5808b78e5b40a4b31288751ce09e57a692f15265",
+      "rtl/cpu/IF_ID_reg.vhd": "3e2394ba6a636fdf92e3747b0561855bb19ac62f",
+      "rtl/cpu/IF_block.vhd": "1c25b718e6223a79919f1d3c0f82fe68a18caeee",
+      "rtl/cpu/ID_block.vhd": "fc0851f88e89ec3fff4b71f4f9027056fd5d44a2",
+      "rtl/cpu/REG_file.vhd": "ef3d9ac27d1f15c956ddfefdf8574a3b350affd4",
+      "rtl/cpu/WB_block.vhd": "23a985602adf530f8a85561c425a851a10104267",
+      "rtl/cpu/MEM_block.vhd": "087a7af22d165d4e6d1ad94a54248bf567c5aab9",
+      "rtl/cpu/EX_block.vhd": "67ba388fca06133b2734d54de4caae7df2be23cf"
+    },
+    "firmware/aes/work-obj08.cf": {
+      "tests/firmware/aes/aes_tb.vhd": "1b8286685fe707bde0de31a8f0afd1e2438f271b",
+      "rtl/video/vga_driver.vhd": "dece63db01510bce83eba6119714d2065099ff1a",
+      "rtl/io/fifo_bram_mux.vhd": "195c0ea4ea29038b72ddf7caeaba98757fbb034a",
+      "rtl/io/ps2_scancode_filter.vhd": "721c857c3e5bf51ff9e0c9c480a65db64ee4b607",
+      "rtl/io/fifo_buffer.vhd": "81ef0b9fe270674ca93c9c08e8acaabf3086ece6",
+      "rtl/cpu/data_forwarding_unit.vhd": "c31c1e25ae7c64d94f1f3021ae3fa4976d1b0463",
+      "rtl/cpu/MEM_WB_reg.vhd": "c53479d481ba183b9c23c8c6b04adb94490020c3",
+      "rtl/cpu/EX_MEM_reg.vhd": "c763e29889b835bb7df588cdeb0a5cd513798004",
+      "rtl/cpu/ID_EX_reg.vhd": "5808b78e5b40a4b31288751ce09e57a692f15265",
+      "rtl/cpu/IF_ID_reg.vhd": "3e2394ba6a636fdf92e3747b0561855bb19ac62f",
+      "rtl/cpu/IF_block.vhd": "1c25b718e6223a79919f1d3c0f82fe68a18caeee",
+      "rtl/cpu/ID_block.vhd": "fc0851f88e89ec3fff4b71f4f9027056fd5d44a2",
+      "rtl/cpu/REG_file.vhd": "ef3d9ac27d1f15c956ddfefdf8574a3b350affd4",
+      "rtl/cpu/WB_block.vhd": "23a985602adf530f8a85561c425a851a10104267",
+      "rtl/cpu/MEM_block.vhd": "087a7af22d165d4e6d1ad94a54248bf567c5aab9",
+      "rtl/cpu/EX_block.vhd": "67ba388fca06133b2734d54de4caae7df2be23cf"
+    },
+    "firmware/animation/work-obj08.cf": {
+      "tests/firmware/animation/presentation_tb.vhd": "88d6061657a3a6d9e50b343f95cb035a6acdc750",
+      "rtl/video/vga_driver.vhd": "dece63db01510bce83eba6119714d2065099ff1a",
+      "rtl/io/fifo_bram_mux.vhd": "195c0ea4ea29038b72ddf7caeaba98757fbb034a",
+      "rtl/io/ps2_scancode_filter.vhd": "721c857c3e5bf51ff9e0c9c480a65db64ee4b607",
+      "rtl/io/fifo_buffer.vhd": "81ef0b9fe270674ca93c9c08e8acaabf3086ece6",
+      "rtl/cpu/data_forwarding_unit.vhd": "c31c1e25ae7c64d94f1f3021ae3fa4976d1b0463",
+      "rtl/cpu/MEM_WB_reg.vhd": "c53479d481ba183b9c23c8c6b04adb94490020c3",
+      "rtl/cpu/EX_MEM_reg.vhd": "c763e29889b835bb7df588cdeb0a5cd513798004",
+      "rtl/cpu/ID_EX_reg.vhd": "5808b78e5b40a4b31288751ce09e57a692f15265",
+      "rtl/cpu/IF_ID_reg.vhd": "3e2394ba6a636fdf92e3747b0561855bb19ac62f",
+      "rtl/cpu/IF_block.vhd": "1c25b718e6223a79919f1d3c0f82fe68a18caeee",
+      "rtl/cpu/ID_block.vhd": "fc0851f88e89ec3fff4b71f4f9027056fd5d44a2",
+      "rtl/cpu/REG_file.vhd": "ef3d9ac27d1f15c956ddfefdf8574a3b350affd4",
+      "rtl/cpu/WB_block.vhd": "23a985602adf530f8a85561c425a851a10104267",
+      "rtl/cpu/MEM_block.vhd": "087a7af22d165d4e6d1ad94a54248bf567c5aab9",
+      "rtl/cpu/EX_block.vhd": "67ba388fca06133b2734d54de4caae7df2be23cf"
+    },
+    "firmware/calculator/work-obj08.cf": {
+      "tests/firmware/calculator/presentation_tb.vhd": "4cf25a82a52165f3edda80b23d9a24d785c1f6b4",
+      "rtl/video/vga_driver.vhd": "dece63db01510bce83eba6119714d2065099ff1a",
+      "rtl/io/fifo_bram_mux.vhd": "195c0ea4ea29038b72ddf7caeaba98757fbb034a",
+      "rtl/io/ps2_scancode_filter.vhd": "721c857c3e5bf51ff9e0c9c480a65db64ee4b607",
+      "rtl/io/fifo_buffer.vhd": "81ef0b9fe270674ca93c9c08e8acaabf3086ece6",
+      "rtl/cpu/data_forwarding_unit.vhd": "c31c1e25ae7c64d94f1f3021ae3fa4976d1b0463",
+      "rtl/cpu/MEM_WB_reg.vhd": "c53479d481ba183b9c23c8c6b04adb94490020c3",
+      "rtl/cpu/EX_MEM_reg.vhd": "c763e29889b835bb7df588cdeb0a5cd513798004",
+      "rtl/cpu/ID_EX_reg.vhd": "5808b78e5b40a4b31288751ce09e57a692f15265",
+      "rtl/cpu/IF_ID_reg.vhd": "3e2394ba6a636fdf92e3747b0561855bb19ac62f",
+      "rtl/cpu/IF_block.vhd": "1c25b718e6223a79919f1d3c0f82fe68a18caeee",
+      "rtl/cpu/ID_block.vhd": "fc0851f88e89ec3fff4b71f4f9027056fd5d44a2",
+      "rtl/cpu/REG_file.vhd": "ef3d9ac27d1f15c956ddfefdf8574a3b350affd4",
+      "rtl/cpu/WB_block.vhd": "23a985602adf530f8a85561c425a851a10104267",
+      "rtl/cpu/MEM_block.vhd": "087a7af22d165d4e6d1ad94a54248bf567c5aab9",
+      "rtl/cpu/EX_block.vhd": "67ba388fca06133b2734d54de4caae7df2be23cf"
+    },
+    "vga/work-obj08.cf": {
+      "tests/vga/tb_vga_driver.vhd": "df28e48db419b72a49aba64d29ac4cfa6138cb4a",
+      "rtl/video/vga_driver.vhd": "dece63db01510bce83eba6119714d2065099ff1a"
+    }
+  },
+  "all_62_compiled_source_entries_match": true,
+  "cpu_roms_match_repository": true,
+  "aes_calculator_roms_match_repository": true,
+  "animation_rom_changes": [
+    {
+      "address": "04F1",
+      "original": "81FF",
+      "simulation": "8108"
+    },
+    {
+      "address": "04F2",
+      "original": "91FF",
+      "simulation": "9100"
+    }
+  ],
+  "logs": [
+    {
+      "path": "cpu/01_alu_forwarding.log",
+      "bytes": 222,
+      "sha256": "5dfecc457e451eaa3e4e1347b7ac8efe4cab211417191b6555cf594a46fa7495"
+    },
+    {
+      "path": "cpu/02_fibonacci.log",
+      "bytes": 222,
+      "sha256": "001ed53abeff00964a1587a9b93a104c69f0dcb13642612097f1e84c67e25d18"
+    },
+    {
+      "path": "cpu/03_math_loops.log",
+      "bytes": 222,
+      "sha256": "8facf1aac3a3d862a15072515fcc2dccea4a41380e7e0d462f8244279364abf4"
+    },
+    {
+      "path": "cpu/04_ram_hazards.log",
+      "bytes": 222,
+      "sha256": "97886e768437aa728db3d4a942813a7f508b9fa356eb9981d1115b74f527164c"
+    },
+    {
+      "path": "cpu/05_jumps_and_calls.log",
+      "bytes": 221,
+      "sha256": "e58bb15979509eb3b56828d126a9f8de7dad6063fe6bed8e2c42b86de1d46b1e"
+    },
+    {
+      "path": "cpu/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cpu/summary.txt",
+      "bytes": 558,
+      "sha256": "f4c0f129af8f1ded0ce0e8cd0982784d6f52d5d3d559880e6ece9c1d8bbec2bf"
+    },
+    {
+      "path": "firmware/aes/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/aes/simulation.log",
+      "bytes": 2235,
+      "sha256": "769f44341f93871e288a9fa8a88e60d8b71ed3a1d7d55916d30e5997b120f6a7"
+    },
+    {
+      "path": "firmware/animation/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/animation/simulation.log",
+      "bytes": 781,
+      "sha256": "1c16774227ae12f427eee6655e93806662cad16dba3b548a877e83854394681f"
+    },
+    {
+      "path": "firmware/calculator/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/calculator/simulation.log",
+      "bytes": 819,
+      "sha256": "32900fac4ecf143a97eb2344bfc512eb7bff8393e9ba7cc0d3283849a806f900"
+    },
+    {
+      "path": "firmware/summary.txt",
+      "bytes": 376,
+      "sha256": "685dfa6adfb85ba7711fae6c33f1dd504483a9a2a4cd446014d2b78c08e6574e"
+    },
+    {
+      "path": "vga/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vga/simulation.log",
+      "bytes": 592,
+      "sha256": "864b73b71efa13257ffc881536598ee73345231a86e338ff80db87d922b9cfba"
+    }
+  ]
+}

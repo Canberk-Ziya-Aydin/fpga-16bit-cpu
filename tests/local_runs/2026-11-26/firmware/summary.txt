@@ -1,0 +1,3 @@
+aes: OVERALL PASS: AES-128 keyboard/VGA program on saved full CPU pipeline
+calculator: PASS: calculator keyboard, limits, backspace, signed subtraction, 65025 product, quotient/remainder, zero divisor, restart, large glyphs and software calls
+animation: PASS: animated sprite, 240 frames, bounds, pause/resume, color, three speeds, restart, large glyphs and software calls

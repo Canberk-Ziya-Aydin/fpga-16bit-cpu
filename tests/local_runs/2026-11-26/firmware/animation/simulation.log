@@ -1,0 +1,6 @@
+../../src/ieee2008/numeric_std-body.vhdl:1641:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1337:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1337:7:@0ms:(assertion warning): NUMERIC_STD."<": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1641:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+C:\Users\USER\Desktop\cpu-ghdl-tests\tests\firmware\animation\presentation_tb.vhd:462:5:@10406196ns:(report note): PASS: animated sprite, 240 frames, bounds, pause/resume, color, three speeds, restart, large glyphs and software calls
+simulation stopped @10406196ns

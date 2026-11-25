@@ -34,9 +34,13 @@ there is no dedicated AES, multiplication or division accelerator.
 | AES-128 | `firmware/aes/aes128_keyboard_vga.coe` |
 | Animation | `firmware/presentation/presentation_animation.coe` |
 
-CPU/VGA regression simulations were run with Codex, including forwarding,
-LOAD dependencies, high RAM addresses, branches and Fibonacci. **Fibonacci and
-the animation are simulation-tested; I have not run them on the FPGA.**
+I reran the supplied VHDL tests locally on Windows with GHDL 6.0.0 (mcode)
+on 26 November 2026: **all five CPU programs, AES, calculator, animation, and
+the standalone VGA regression passed**. The tests and utilities were written
+by ChatGPT/Codex; these runs were executed on my computer. The VGA regression
+completed 10,089,816 checks. [Local run logs](tests/local_runs/2026-11-26/README.md)
+are included. **Fibonacci and the animation are simulation-tested; I have not
+run them on the FPGA.**
 See [validation](docs/validation.md) for the test scope and logs.
 
 ## Implementation results

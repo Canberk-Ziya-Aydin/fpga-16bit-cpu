@@ -1,0 +1,2 @@
+C:\Users\USER\Desktop\cpu-ghdl-tests\tests\cpu\cpu_program_tb.vhd:339:5:@766006ns:(report note): PASS: 12307 RAM/screen words checked; 0 LOAD-use stalls; 12371 taken branches; ROM 7FFF=false
+simulation stopped @766006ns

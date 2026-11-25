@@ -35,6 +35,27 @@ constraint coverage or timing of unconstrained external I/O. No independent
 Vivado rerun was performed while recording these results. They do not establish
 that the repository export recreates the same implementation.
 
+## My local GHDL rerun — 26 November 2026
+
+I reran the existing test suites on my Windows computer with GHDL 6.0.0
+(mcode, GNAT 15.2.0) and Python 3.14. **All five CPU programs, all three
+firmware cases, and the standalone VGA test passed.** The VGA test completed
+10,089,816 checks. The testbenches and utilities remain ChatGPT/Codex-written;
+these are locally reproduced runs of those tests.
+
+The [local run record](../tests/local_runs/2026-11-26/README.md) includes the
+actual logs and summaries. All 62 source-hash entries in the supplied GHDL
+compilation libraries match the repository snapshot. CPU ROM inputs, AES and
+calculator ROMs also match; the animation input has only the two previously
+documented delay-shortening instruction changes. The recorded results and
+simulated event times agree with the earlier reports below.
+
+This rerun uses behavioral memories and the same existing test fixtures. It
+is not an independently designed verification suite, a clean Vivado rebuild,
+or a physical FPGA run. Firmware scan codes enter after the PS/2 deserializer.
+The visual color/layout discrepancy between the emulator and physical monitor
+has not been resolved by these passing simulations.
+
 ## CPU regression simulations
 
 ChatGPT/Codex supplied and ran the regression programs and test utilities using
@@ -77,7 +98,7 @@ are now included in [tests/firmware](../tests/firmware/README.md). All three
 testbenches were restored unchanged and rerun with the current repository RTL
 using GHDL 4.1.0 (mcode), VHDL-2008. **AES, calculator and animation all passed.**
 Their reported results and simulated event times matched the archived runs.
-Fresh logs are in [tests/firmware/simulation_logs](../tests/firmware/simulation_logs).
+Logs from that earlier rerun are in [tests/firmware/simulation_logs](../tests/firmware/simulation_logs).
 
 The runner verifies hashes of the original testbenches and generated inputs.
 AES and calculator use the delivered ROMs; animation retains the documented
