@@ -99,83 +99,120 @@
   "logs": [
     {
       "path": "cpu/01_alu_forwarding.log",
-      "bytes": 222,
-      "sha256": "5dfecc457e451eaa3e4e1347b7ac8efe4cab211417191b6555cf594a46fa7495"
+      "bytes": 220,
+      "sha256": "b12c1818a836850c13efdaf2fb21f85950fdcf0ba9af0c9814b198c89c22f218",
+      "original_upload_bytes": 222,
+      "original_upload_sha256": "5dfecc457e451eaa3e4e1347b7ac8efe4cab211417191b6555cf594a46fa7495"
     },
     {
       "path": "cpu/02_fibonacci.log",
-      "bytes": 222,
-      "sha256": "001ed53abeff00964a1587a9b93a104c69f0dcb13642612097f1e84c67e25d18"
+      "bytes": 220,
+      "sha256": "2b34d33d8d1bc5e8d5c105703de8a04de150c4d99bfed5c502319e96b17962aa",
+      "original_upload_bytes": 222,
+      "original_upload_sha256": "001ed53abeff00964a1587a9b93a104c69f0dcb13642612097f1e84c67e25d18"
     },
     {
       "path": "cpu/03_math_loops.log",
-      "bytes": 222,
-      "sha256": "8facf1aac3a3d862a15072515fcc2dccea4a41380e7e0d462f8244279364abf4"
+      "bytes": 220,
+      "sha256": "70389e1e0955ea8e1c1582838490c456fb8f17c14b26ac5d44292f758bd46dad",
+      "original_upload_bytes": 222,
+      "original_upload_sha256": "8facf1aac3a3d862a15072515fcc2dccea4a41380e7e0d462f8244279364abf4"
     },
     {
       "path": "cpu/04_ram_hazards.log",
-      "bytes": 222,
-      "sha256": "97886e768437aa728db3d4a942813a7f508b9fa356eb9981d1115b74f527164c"
+      "bytes": 220,
+      "sha256": "64405d7783e737b61f05ad499dacac50f41d7b8466a91bdce932212e15a01b4e",
+      "original_upload_bytes": 222,
+      "original_upload_sha256": "97886e768437aa728db3d4a942813a7f508b9fa356eb9981d1115b74f527164c"
     },
     {
       "path": "cpu/05_jumps_and_calls.log",
-      "bytes": 221,
-      "sha256": "e58bb15979509eb3b56828d126a9f8de7dad6063fe6bed8e2c42b86de1d46b1e"
+      "bytes": 219,
+      "sha256": "007dac13a55640f5ae4a9ccb1a5f7cbd896c7e432f5e6df7db4b0794ec4c5151",
+      "original_upload_bytes": 221,
+      "original_upload_sha256": "e58bb15979509eb3b56828d126a9f8de7dad6063fe6bed8e2c42b86de1d46b1e"
     },
     {
       "path": "cpu/compile.log",
       "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_upload_bytes": 0,
+      "original_upload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "cpu/summary.txt",
-      "bytes": 558,
-      "sha256": "f4c0f129af8f1ded0ce0e8cd0982784d6f52d5d3d559880e6ece9c1d8bbec2bf"
+      "bytes": 553,
+      "sha256": "1c6c23ffb22271cc7fcc53d0f001393cfc016d47525f4eca9ebadf138332a45b",
+      "original_upload_bytes": 558,
+      "original_upload_sha256": "f4c0f129af8f1ded0ce0e8cd0982784d6f52d5d3d559880e6ece9c1d8bbec2bf"
     },
     {
       "path": "firmware/aes/compile.log",
       "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_upload_bytes": 0,
+      "original_upload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "firmware/aes/simulation.log",
-      "bytes": 2235,
-      "sha256": "769f44341f93871e288a9fa8a88e60d8b71ed3a1d7d55916d30e5997b120f6a7"
+      "bytes": 2220,
+      "sha256": "f4190dc8ee1e51dbd4d1c683fbb86ccf0e6bd07bced5235cbbc6657fea322d59",
+      "original_upload_bytes": 2235,
+      "original_upload_sha256": "769f44341f93871e288a9fa8a88e60d8b71ed3a1d7d55916d30e5997b120f6a7"
     },
     {
       "path": "firmware/animation/compile.log",
       "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_upload_bytes": 0,
+      "original_upload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "firmware/animation/simulation.log",
-      "bytes": 781,
-      "sha256": "1c16774227ae12f427eee6655e93806662cad16dba3b548a877e83854394681f"
+      "bytes": 775,
+      "sha256": "07ae7c66f023e8381f32cb4da7a14e484afd28ddede66bce62fb8bfa1cb00ba2",
+      "original_upload_bytes": 781,
+      "original_upload_sha256": "1c16774227ae12f427eee6655e93806662cad16dba3b548a877e83854394681f"
     },
     {
       "path": "firmware/calculator/compile.log",
       "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_upload_bytes": 0,
+      "original_upload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "firmware/calculator/simulation.log",
-      "bytes": 819,
-      "sha256": "32900fac4ecf143a97eb2344bfc512eb7bff8393e9ba7cc0d3283849a806f900"
+      "bytes": 813,
+      "sha256": "f097c8804ee09f00c9f5e2552e9e450db9a358a046330f5617b30e52bbde0364",
+      "original_upload_bytes": 819,
+      "original_upload_sha256": "32900fac4ecf143a97eb2344bfc512eb7bff8393e9ba7cc0d3283849a806f900"
     },
     {
       "path": "firmware/summary.txt",
-      "bytes": 376,
-      "sha256": "685dfa6adfb85ba7711fae6c33f1dd504483a9a2a4cd446014d2b78c08e6574e"
+      "bytes": 373,
+      "sha256": "88657558055f224f1b44ec5afb74e5ba966f16d5a81f434c5b3649a91869ac36",
+      "original_upload_bytes": 376,
+      "original_upload_sha256": "685dfa6adfb85ba7711fae6c33f1dd504483a9a2a4cd446014d2b78c08e6574e"
     },
     {
       "path": "vga/compile.log",
       "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_upload_bytes": 0,
+      "original_upload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "vga/simulation.log",
-      "bytes": 592,
-      "sha256": "864b73b71efa13257ffc881536598ee73345231a86e338ff80db87d922b9cfba"
+      "bytes": 588,
+      "sha256": "6e7946fdddcf74f61cc62893bcf2603c67954286d6f4e59bea5d0075811354d1",
+      "original_upload_bytes": 592,
+      "original_upload_sha256": "864b73b71efa13257ffc881536598ee73345231a86e338ff80db87d922b9cfba"
     }
-  ]
+  ],
+  "log_line_endings": {
+    "committed": "LF",
+    "original_upload": "CRLF",
+    "content_changes": "None; only line endings were normalized."
+  }
 }

@@ -25,6 +25,9 @@ continue to their final PASS markers without subsequent assertion errors.
 The uploaded GHDL work-library metadata contains 62 source SHA-1 entries across
 the suites. All 62 match the corresponding repository RTL/testbench bytes.
 [evidence.json](evidence.json) records those hashes and log SHA-256 digests.
+The logs use LF line endings in Git. Each log entry records the byte count and
+digest for that committed copy, plus separate `original_upload_bytes` and
+`original_upload_sha256` fields for the original Windows file with CRLF endings.
 The five CPU ROM inputs match their repository COEs. AES and calculator use the
 exact delivered ROMs. Animation changes only `04F1: 81FF -> 8108` and
 `04F2: 91FF -> 9100` in generated simulation input, reducing the software
@@ -43,14 +46,14 @@ python tests/cpu/run_tests.py --rtl-dir rtl/cpu --work-dir build/local-cpu
 python tests/firmware/run_tests.py --work-dir build/local-firmware
 ```
 
-Both Python runners accept `--ghdl "C:\\Tools\\bin\\ghdl.exe"` if GHDL is
+Both Python runners accept `--ghdl "C:\Tools\bin\ghdl.exe"` if GHDL is
 not on PATH. For standalone VGA in PowerShell, from the repository root:
 
 ```powershell
 New-Item -ItemType Directory -Force build/local-vga | Out-Null
 Push-Location build/local-vga
-& "C:\\Tools\\bin\\ghdl.exe" -a --std=08 ../../rtl/video/vga_driver.vhd ../../tests/vga/tb_vga_driver.vhd
-& "C:\\Tools\\bin\\ghdl.exe" -r --std=08 tb_vga_driver --assert-level=error
+& "C:\Tools\bin\ghdl.exe" -a --std=08 ../../rtl/video/vga_driver.vhd ../../tests/vga/tb_vga_driver.vhd
+& "C:\Tools\bin\ghdl.exe" -r --std=08 tb_vga_driver --assert-level=error
 Pop-Location
 ```
 
