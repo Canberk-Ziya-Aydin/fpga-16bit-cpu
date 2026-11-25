@@ -1,6 +1,6 @@
 # CPU test programs
 
-Five separate program ROM images for your current 16-bit CPU, 32K instruction
+Five separate program ROM images for my 16-bit CPU, 32K instruction
 ROM, 128-column VGA screen and already loaded Nitram font. Each program runs
 after reset, shows green PASS or red FAIL, prints its calculated values in
 hexadecimal, and then stays on that screen. No keyboard input is needed.
@@ -12,7 +12,7 @@ hexadecimal, and then stays on that screen. No keyboard input is needed.
 3. Regenerate the ROM output products and rebuild/program the bitstream.
 4. Press reset to run the same test again.
 
-Keep your existing glyph RAM font, VGA driver and wiring. Each test clears the
+Keep the existing glyph RAM font, VGA driver and wiring. Each test clears the
 screen and uses the same two-character left margin as the keyboard demo.
 
 | Program ROM | What it exercises | Expected examples on VGA |
@@ -37,9 +37,9 @@ LOAD -> STORE address. The jumps test additionally checks LOAD -> JMP target.
 
 The jump test calls code at `1000`, calls the same function at `4000` twice,
 and executes a return instruction at the last ROM word, `7FFF`. These are
-register-based jumps using your existing instruction encoding.
+register-based jumps using the CPU's existing instruction encoding.
 
-SLA follows your current EX block: it shifts left and copies the old least
+SLA follows the current EX block: it shifts left and copies the old least
 significant bit into bit 0. Therefore SLA of `8001` is `0003`. SLL of the
 same input is `0002`; SRA is `C000`; SRL is `4000`.
 
@@ -84,7 +84,7 @@ Regenerate all five ROMs with Python 3, without extra packages:
 python build_programs.py
 ```
 
-To run the supplied testbench with GHDL and your CPU sources:
+To run the supplied testbench with GHDL and the CPU sources:
 
 ```sh
 python run_tests.py --rtl-dir /path/to/cpu/rtl
@@ -93,7 +93,7 @@ python run_tests.py --rtl-dir /path/to/cpu/rtl
 The RTL directory must contain `EX_block.vhd`, `MEM_block.vhd`, `WB_block.vhd`,
 `REG_file.vhd`, `ID_block.vhd`, `IF_block.vhd`, `IF_ID_reg.vhd`,
 `ID_EX_reg.vhd`, `EX_MEM_reg.vhd`, `MEM_WB_reg.vhd`, and
-`data_forwarding_unit.vhd`. It must include your agreed register-jump,
+`data_forwarding_unit.vhd`. It must include the register-jump,
 15-bit ROM-address and LOAD-use hazard changes. The runner does not alter RTL.
 
 The testbench instantiates all eleven CPU modules with one-clock synchronous

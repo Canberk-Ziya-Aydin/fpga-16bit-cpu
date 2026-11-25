@@ -34,7 +34,7 @@ Suggested presentation:
 
 This demonstrates keyboard polling, input validation, arithmetic, conditional
 jumps, functions, a software call stack, decimal conversion and screen updates.
-Multiplication and division are implemented with your existing ADD/SUB and
+Multiplication and division are implemented with the CPU's existing ADD/SUB and
 jump instructions.
 
 ## 2. Interactive VGA animation
@@ -52,11 +52,11 @@ A coloured square moves and bounces inside a frame.
 
 This demonstrates a program updating screen RAM while the independent VGA
 module scans it, plus keyboard input and boundary calculations. Frame timing
-uses a software delay loop intended for your 100 MHz CPU clock.
+uses a software delay loop intended for the 100 MHz CPU clock.
 
 ## Large text
 
-Both demos enlarge your existing 5x5 font in software. The CPU reads a glyph
+Both demos enlarge the existing 5x5 font in software. The CPU reads a glyph
 from glyph RAM and turns each font bit into one coloured screen cell. Each
 large character is 25x25 physical pixels, with spacing between characters.
 The VGA driver and glyph format stay the same.
@@ -79,15 +79,15 @@ starts at `3F00`. The program reads the existing glyphs at `E000`–`E1FF` and
 pops keyboard data from `FFFF`.
 
 The programs use letters, top-row digits, Backspace, Enter and Space. Both
-your original filter and the newer arrow-enabled filter support these keys.
+my original filter and the newer arrow-enabled filter support these keys.
 Shift and Caps Lock are unnecessary.
 
 ## Verification
 
 See `verification.txt` and the simulation logs. The saved eleven-module CPU
-pipeline, actual uploaded keyboard filter/FIFO/mux, existing VGA driver and
+pipeline, my supplied keyboard filter/FIFO/mux, existing VGA driver and
 one-clock synchronous memory models were used. The calculator uses its exact
 delivery ROM. The animation's software delay constant was shortened for its
 simulation; its drawing, movement and keyboard instructions were unchanged.
-Canberk Ziya Aydın has run the calculator on the Basys 3. The animation has only
-been verified in simulation; a hardware run has not been reported.
+I have run the calculator on the Basys 3. The animation has only been verified
+in simulation; I have not run it on hardware.

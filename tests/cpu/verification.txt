@@ -1,11 +1,11 @@
 Verification: GHDL, VHDL-2008, complete eleven-module CPU pipeline.
 RTL: saved pipeline sources in margin_demo_work/test/cursor.
-Includes the agreed 32K ROM address path, register jump operands, LOAD-use hazard handling and MEM is_load default.
+Includes the 32K ROM address path, register jump operands, LOAD-use hazard handling and MEM is_load default.
 One-edge synchronous ROM and RAM; no additional memory output register.
 All 12,288 screen RAM words independently compared after each program.
 RAM and result references generated from independent expected constants.
 VGA pixel output and PS/2 receiver were not simulated in this suite.
-Hardware execution has not been performed here.
+I have not run these five regression programs on the FPGA.
 
 01_alu_forwarding:  12307 RAM/screen words checked; 0 LOAD-use stalls; 12371 taken branches; ROM 7FFF=false
 02_fibonacci:  12309 RAM/screen words checked; 0 LOAD-use stalls; 12397 taken branches; ROM 7FFF=false

@@ -3,13 +3,13 @@
 An interactive keyboard/VGA program using the CPU's existing instructions,
 memory map, font and hardware connections. Encryption, decryption and key
 expansion run as software on the CPU. The firmware and its test/build utilities
-were written by ChatGPT/Codex. Canberk Ziya Aydın has run this demo on the Basys 3.
+were written by ChatGPT/Codex. I have run this demo on the Basys 3.
 
 ## Load it
 
 Select `aes128_keyboard_vga.coe` as the **program ROM** initialization file,
 regenerate its output products, rebuild the bitstream and program the FPGA.
-Keep your existing glyph RAM font initialization. Reset starts the program.
+Keep the existing glyph RAM font initialization. Reset starts the program.
 
 The ROM is padded to 32,768 words; 11,789 words contain program instructions.
 
@@ -78,7 +78,7 @@ RAM by the program during startup. The round keys are generated from the
 entered key at runtime. Every XOR is implemented with four existing NAND
 instructions. Functions use register jumps and a software stack.
 
-The interface enlarges your existing 5x5 font in software by drawing one
+The interface enlarges the existing 5x5 font in software by drawing one
 screen cell per font bit. Large characters are 25x25 physical pixels.
 
 | Word addresses | Purpose |
@@ -99,7 +99,7 @@ screen cell per font bit. Large characters are 25x25 physical pixels.
 
 ## Source and verification
 
-`aes128_keyboard_vga.asm` contains the program in your instruction language.
+`aes128_keyboard_vga.asm` contains the program in the CPU's assembly language.
 `aes128_keyboard_vga_listing.txt` includes every ROM address and machine word.
 All numeric operands in assembly are hexadecimal.
 
@@ -121,5 +121,5 @@ python verify_aes.py
 See `verification.txt` and the simulation logs for the checks performed with
 the saved CPU pipeline, keyboard filter, FIFO, memory mux and VGA driver.
 The preview images are rendered from simulation screen RAM. The reports describe
-automated simulations; the author's later FPGA run is recorded separately in the
+automated simulations; my later FPGA run is recorded separately in the
 repository README and validation notes.

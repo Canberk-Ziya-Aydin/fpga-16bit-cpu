@@ -1,16 +1,16 @@
 KEYBOARD / VGA DEMOS WITH A TWO-CELL LEFT MARGIN
 ==============================================
 
-QUICK INSTALL FOR YOUR CURRENT HARDWARE
+QUICK INSTALL FOR THE CURRENT HARDWARE
 --------------------------------------
 Use vga_keyboard_demo_margin.coe as the PROGRAM ROM initialization file.
 Keep the program ROM at 32768 words x 16 bits, regenerate output products,
 rebuild the bitstream, and reload the FPGA.
 
-This basic version works with your existing VHDL/filter. It supports the
+This basic version works with the existing VHDL/filter. It supports the
 same letters, numbers, Space, Enter, and Backspace as the old demo. It adds
 10 pixels of black space on the left: two character cells, each 5 pixels.
-Your existing font must already be initialized in glyph RAM, as before.
+The existing font must already be initialized in glyph RAM, as before.
 
 CURSOR VERSION
 --------------
@@ -60,7 +60,7 @@ FIFO clk          <- system clock
 FIFO write_data   <- filter fifo_char
 FIFO write_enable <- filter fifo_trigger
 
-These connections and your uploaded FIFO/receiver/filter/mux passed checks.
+These connections and my supplied FIFO/receiver/filter/mux passed checks.
 The supplied fifo_buffer.vhd is the unchanged reference FIFO, not a new
 fix for the old display-timing issue. It has 32 physical slots, 31 usable.
 FFFE reads status (0 empty, 1 partial, 2 full); FFFF reads/pops a key,

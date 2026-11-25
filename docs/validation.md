@@ -1,15 +1,14 @@
 # Validation
 
-## Hardware runs reported by the author
+## Hardware testing
 
-Canberk Ziya Aydın ran the keyboard/VGA, calculator and AES demos on the Basys 3.
-These are hardware demonstrations; they are separate from the automated
-simulation results below. Fibonacci and the animation have not been reported as
-run on the FPGA.
+I ran the keyboard/VGA, calculator and AES demos on the Basys 3.
+These hardware demonstrations are separate from the automated simulation
+results below. I have not run Fibonacci or the animation on the FPGA.
 
 ## Implemented hardware reports
 
-On 25 November 2026 the author supplied screenshots of Vivado's utilization
+On 25 November 2026, I recorded screenshots of Vivado's utilization
 and Design Timing Summary for `impl_1` / `top_design_wrapper` on
 `xc7a35tcpg236-1`, from the existing working project. The documented system
 clock is 100 MHz. The figures cover the full system, not only the CPU core.
@@ -83,10 +82,9 @@ Fresh logs are in [tests/firmware/simulation_logs](../tests/firmware/simulation_
 The runner verifies hashes of the original testbenches and generated inputs.
 AES and calculator use the delivered ROMs; animation retains the documented
 two-instruction software-delay shortcut. These reruns cover the firmware HDL
-fixtures; the separate older AES instruction-level report was not rerun here.
-Their old references to hardware runs not performed "here" refer to the
-simulation environment; the author's later calculator/AES hardware runs are
-recorded above.
+fixtures; the separate older AES instruction-level report was not rerun in
+that session. The simulation reports describe the automated checks; my later
+calculator/AES hardware runs are recorded above.
 
 ## Vivado build limits
 
@@ -95,4 +93,4 @@ after missing generated-file messages. The project-creation script has been
 removed pending a verified replacement procedure. Clean project regeneration,
 synthesis, implementation, setup/hold timing and the resulting bitstream still
 need verification from the repository files. This does not replace or invalidate
-the author's hardware runs using the existing working project.
+my hardware runs using my existing working project.

@@ -1,7 +1,7 @@
 AES-128 keyboard/VGA firmware verification
 
-Later status update (25 October 2026): the project author reports running this
-demo on the Basys 3. The report below records Codex's earlier simulations and
+Hardware update (25 October 2026): I ran this demo on the Basys 3.
+The report below records Codex's earlier simulations and
 does not claim a hardware benchmark. Firmware and tests were written by Codex.
 
 ROM SHA-256: b7ec2f91df97f9f0d0195ef4eef508941e99715aff4cf020bcce212effa3a81d
@@ -20,8 +20,8 @@ Architectural instruction simulation:
 
 Full CPU RTL simulation:
 - GHDL, VHDL-2008, 100 MHz clock.
-- Saved complete eleven-module CPU pipeline with the agreed register-jump, 15-bit ROM-address and LOAD-use hazard changes.
-- Actual uploaded ps2_scancode_filter(1).vhd, fifo_buffer(1).vhd, fifo_bram_mux(1).vhd.
+- Saved complete eleven-module CPU pipeline with the register-jump, 15-bit ROM-address and LOAD-use hazard changes.
+- My supplied ps2_scancode_filter(1).vhd, fifo_buffer(1).vhd, fifo_bram_mux(1).vhd.
 - Existing vga_driver.vhd; one-clock synchronous ROM, screen RAM and glyph RAM models.
 - Exact delivery ROM, without simulation modifications.
 - All 2048 runtime-loaded lookup table entries checked.

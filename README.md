@@ -41,7 +41,7 @@ See [validation](docs/validation.md) for the test scope and logs.
 
 ## Implementation results
 
-Vivado reports supplied by the author on 25 November 2026 for the existing
+On 25 November 2026, I recorded these Vivado results from my existing
 implemented Basys 3 project (100 MHz system clock):
 
 | Resource | Used | Available | Utilization |
@@ -61,7 +61,7 @@ from this repository. See [validation](docs/validation.md) for scope and details
 The previous project-creation script was removed after a clean rebuild attempt
 failed while opening the imported block design. A verified project-recreation
 procedure is not yet available. The existing hardware demonstrations above
-were run using the author's working Vivado project.
+were run using my working Vivado project.
 
 The keyboard uses an external PS/2 connection on JA: clock J1, data L2.
 The hardware setup includes a logic level shifter between the PS/2 keyboard
@@ -70,8 +70,8 @@ See [build notes](docs/build.md) for memory configuration and the current build 
 
 ## Contributions and AI assistance
 
-CPU architecture, instruction-set and pipeline design, system integration and
-hardware testing: **Canberk Ziya Aydın**. ChatGPT/Codex assisted with CPU review
+I designed the CPU architecture, instruction set and pipeline, integrated the
+system, and tested it on hardware. ChatGPT/Codex assisted with CPU review
 and debugging.
 
 **ChatGPT/Codex wrote the VGA module, all Tcl scripts, the demo/test programs

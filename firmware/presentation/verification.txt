@@ -1,10 +1,10 @@
-Later status update (25 October 2026): the project author reports running the
-calculator on the Basys 3. Animation remains simulation-only. The report below
+Hardware update (25 October 2026): I ran the calculator on the Basys 3.
+I have not run the animation on hardware. The report below
 records Codex's earlier simulations. Programs and tests were written by Codex.
 
-GHDL VHDL-2008, saved eleven-module CPU pipeline, actual uploaded 16-bit keyboard filter/FIFO/mux, existing VGA driver.
+GHDL VHDL-2008, saved eleven-module CPU pipeline, my supplied 16-bit keyboard filter/FIFO/mux, existing VGA driver.
 One-clock synchronous program ROM, screen RAM and preloaded glyph RAM models.
-Scan codes injected at the deserializer output; PS/2 serial electrical timing was not re-tested here.
+Scan codes injected at the deserializer output; PS/2 serial electrical timing was not re-tested in this suite.
 Keyboard events were processed through the actual filter and FIFO, including key-release sequences.
 Enlarged character screen cells were independently compared with the font bitmaps.
 Software stack pointer was checked at every keyboard polling boundary.
@@ -12,7 +12,7 @@ Calculator: exact delivery ROM simulated.
 Animation: only the software delay constant was shortened from FFFF to 0008 for simulation; other ROM words unchanged.
 Animation: 240 frames plus pause/resume, colour, speed changes and restart.
 Preview images were rendered from actual simulation screen RAM with the existing font.
-Physical FPGA execution has not been performed here.
+These automated simulations did not include physical FPGA execution; my calculator hardware run is recorded above.
 
 presentation_calculator: calculator keyboard, limits, backspace, signed subtraction, 65025 product, quotient/remainder, zero divisor, restart, large glyphs and software calls
 presentation_animation: animated sprite, 240 frames, bounds, pause/resume, color, three speeds, restart, large glyphs and software calls

@@ -6,7 +6,7 @@ The XDC maps reset to the center button and PS/2 clock/data to JA pins J1/L2.
 
 ## Keyboard hardware
 
-The author's hardware setup uses a logic level shifter between the external
+My hardware setup uses a logic level shifter between the external
 PS/2 keyboard and the Basys 3. The FPGA pin assignments are JA clock J1 and
 data L2.
 
@@ -17,8 +17,8 @@ on 25 November 2026 failed at `open_bd_design` after missing generated-file
 messages. A verified recreation procedure is not yet available; the block
 design is retained as a source reference.
 
-The author's existing Vivado project has run the keyboard/VGA, calculator and
-AES demos on the Basys 3. Recreating that working project from this source
+I have run the keyboard/VGA, calculator and AES demos on the Basys 3 using
+my existing Vivado project. Recreating that working project from this source
 export remains to be verified. Check setup and hold timing after rebuilding.
 
 ## Memory IP

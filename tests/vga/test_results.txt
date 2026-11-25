@@ -25,9 +25,9 @@ Generated synthesizable netlist size: 47,522 bytes
 This is a frontend synthesis check, not FPGA place-and-route or a timing report.
 
 Tcl runner: source/procedure loading checked using Tcl 9.0.4.
-xvhdl/xelab/xsim execution: not run here (Vivado is unavailable).
+xvhdl/xelab/xsim execution: not run in this simulation environment (Vivado was unavailable).
 Actual Vivado block-memory IP models, CPU/block design integration,
-FPGA implementation timing, and a physical VGA monitor: not tested here.
+FPGA implementation timing, and a physical VGA monitor: outside the scope of this standalone simulation.
 
 Simulation result:
 OVERALL PASS: 10089816 checks; full-frame RGB, 4-clock pixels, sync, blanking,
