@@ -64,6 +64,8 @@ procedure is not yet available. The existing hardware demonstrations above
 were run using the author's working Vivado project.
 
 The keyboard uses an external PS/2 connection on JA: clock J1, data L2.
+The hardware setup includes a logic level shifter between the PS/2 keyboard
+and the Basys 3.
 See [build notes](docs/build.md) for memory configuration and the current build status.
 
 ## Contributions and AI assistance
