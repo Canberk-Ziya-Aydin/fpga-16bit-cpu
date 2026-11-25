@@ -4,6 +4,12 @@ Use Vivado 2025.2 with Artix-7 support. The board is Basys 3, device
 `xc7a35tcpg236-1`, using a 100 MHz clock and synchronous active-high reset.
 The XDC maps reset to the center button and PS/2 clock/data to JA pins J1/L2.
 
+## Keyboard hardware
+
+The author's hardware setup uses a logic level shifter between the external
+PS/2 keyboard and the Basys 3. The FPGA pin assignments are JA clock J1 and
+data L2.
+
 ## Project recreation status
 
 The previous project-creation script has been removed. A clean rebuild attempt
