@@ -61,7 +61,9 @@ recorded above.
 
 ## Vivado build limits
 
-Vivado is unavailable in the packaging environment. Tcl completeness checking
-does not validate Vivado commands or IP properties. Clean project regeneration,
+A clean recreation attempt on 25 November 2026 failed at `open_bd_design`
+after missing generated-file messages. The project-creation script has been
+removed pending a verified replacement procedure. Clean project regeneration,
 synthesis, implementation, setup/hold timing and the resulting bitstream still
-need local verification.
+need verification from the repository files. This does not replace or invalidate
+the author's hardware runs using the existing working project.

@@ -37,18 +37,13 @@ See [validation](docs/validation.md) for the test scope and logs.
 
 ## Build
 
-From a Vivado 2025.2 command prompt:
-
-```sh
-vivado -mode batch -source scripts/create_project.tcl
-```
-
-This prepares `build/vivado/fpga_16bit_cpu.xpr` with the AES demo. Open it and
-generate/program the bitstream. Press **T** in AES to run its built-in example.
-The setup script has not yet been verified through a clean local Vivado build.
+The previous project-creation script was removed after a clean rebuild attempt
+failed while opening the imported block design. A verified project-recreation
+procedure is not yet available. The existing hardware demonstrations above
+were run using the author's working Vivado project.
 
 The keyboard uses an external PS/2 connection on JA: clock J1, data L2.
-See [build notes](docs/build.md) for memory timing and selecting another ROM.
+See [build notes](docs/build.md) for memory configuration and the current build status.
 
 ## Contributions and AI assistance
 

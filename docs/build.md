@@ -4,23 +4,16 @@ Use Vivado 2025.2 with Artix-7 support. The board is Basys 3, device
 `xc7a35tcpg236-1`, using a 100 MHz clock and synchronous active-high reset.
 The XDC maps reset to the center button and PS/2 clock/data to JA pins J1/L2.
 
-## Create the project
+## Project recreation status
 
-```sh
-vivado -mode batch -source scripts/create_project.tcl
-```
+The previous project-creation script has been removed. A clean rebuild attempt
+on 25 November 2026 failed at `open_bd_design` after missing generated-file
+messages. A verified recreation procedure is not yet available; the block
+design is retained as a source reference.
 
-The default ROM is AES. To create a fresh project with another program:
-
-```sh
-vivado -mode batch -source scripts/create_project.tcl -tclargs firmware/presentation/presentation_calculator.coe
-```
-
-The script imports the design into `build/vivado`, resolves COE paths relative
-to the repository, generates IP output products and creates the HDL wrapper.
-It refuses to overwrite an existing generated project. Open that XPR to build
-and program a bitstream. Implementation uses `Performance_ExplorePostRoutePhysOpt`;
-check both setup and hold timing after each build.
+The author's existing Vivado project has run the keyboard/VGA, calculator and
+AES demos on the Basys 3. Recreating that working project from this source
+export remains to be verified. Check setup and hold timing after rebuilding.
 
 ## Memory IP
 
@@ -32,8 +25,7 @@ check both setup and hold timing after each build.
 
 CPU reads and VGA B-port reads require **one-clock memory latency**. Optional
 primitive/core output registers must remain disabled. VGA uses RAM port B, with
-`web` and `dinb` tied to zero. The setup script explicitly applies those output
-register settings. Changing the shared clock also changes VGA timing.
+`web` and `dinb` tied to zero. Changing the shared clock also changes VGA timing.
 
 Save each successful `.bit` under a distinct name outside the implementation
 run directory before rebuilding another program.
@@ -53,8 +45,7 @@ Local COE/generated-file paths and reset metadata were normalized for portabilit
 reset metadata now matches the active-high RTL. The uploaded design already
 disables the screen/glyph B-port primitive output registers.
 
-Vivado is unavailable in the packaging environment. The setup script has not
-been verified through clean IP regeneration, synthesis or implementation here;
-GHDL checks are separate from that build. This source export does not include
-the latest bitstream or Vivado run artifacts. The Tcl script and test utilities
-were written by ChatGPT/Codex.
+The clean project recreation attempt failed before synthesis or implementation.
+GHDL checks are separate from the Vivado build. This source export does not
+include the latest bitstream or Vivado run artifacts. The test utilities were
+written by ChatGPT/Codex.
